@@ -1,0 +1,26 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened class="sidenav" fixedInViewport="true" fixedTopGap="true" fixedBottomGap="true">
+      <button mat-raised-button color="primary" routerLink="/home"> <mat-icon>home</mat-icon> Page d'accueil</button><br/>
+      <button mat-raised-button color="primary" routerLink="/"> <mat-icon>family_restroom</mat-icon> Qui sommes-nous ?</button> <br/>
+      <button mat-raised-button color="primary" routerLink="/"> <mat-icon>interests</mat-icon> Nos valeurs</button> <br/>
+      <button mat-raised-button color="primary" routerLink="/structures"> <mat-icon>extension</mat-icon> Nos structures</button><br/>
+      <button mat-raised-button color="primary" routerLink="/"> <mat-icon>help</mat-icon> F.A.Q.</button> <br/>
+      <button mat-raised-button color="primary" routerLink="/"> <mat-icon>diversity_1</mat-icon> Nos partenaires</button> <br/>
+      <button mat-raised-button color="primary" routerLink="/"> <mat-icon>mail</mat-icon> Nous contacter</button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar class="header">
+      <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+  
+      La Balancelle 
+    </mat-toolbar>
+
+      <div class="container main-content">
+          <router-outlet></router-outlet>
+      </div>
+
+      <app-footer></app-footer> 
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
