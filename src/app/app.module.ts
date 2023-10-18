@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageModule } from './homepage/homepage.module';
+import { StructuresModule } from './structures/structures.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
